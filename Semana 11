@@ -1,1 +1,10 @@
+#Arreglo multidimensional 3x3 de precios de comida.
 
+Preciocom= [
+    [5, 8, 9],
+    [7, 14, 24],
+    [2, 4, 6]
+]
+for i in range(len(Preciocom)):
+    for j in range(len(Preciocom[i])):
+        print(f"Valor de la comida = {Preciocom[i][j]}")
