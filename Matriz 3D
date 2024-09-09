@@ -1,0 +1,129 @@
+# Crear una matriz 3D para almacenar datos de temperaturas
+# Primera dimensión: Ciudades (Quito, Guayaquil, Cuenca)
+# Segunda dimensión: Semanas (4 semanas)
+# Tercera dimensión: Días de la semana (7 días)
+temperaturas = [
+    [   # Quito
+        [   # Semana 1
+            {"dia": "Lunes", "temp": 28},
+            {"dia": "Martes", "temp": 20},
+            {"dia": "Miércoles", "temp": 22},
+            {"dia": "Jueves", "temp": 29},
+            {"dia": "Viernes", "temp": 25},
+            {"dia": "Sábado", "temp": 28},
+            {"dia": "Domingo", "temp": 32}
+        ],
+        [   # Semana 2
+            {"dia": "Lunes", "temp": 26},
+            {"dia": "Martes", "temp": 29},
+            {"dia": "Miércoles", "temp": 23},
+            {"dia": "Jueves", "temp": 31},
+            {"dia": "Viernes", "temp": 37},
+            {"dia": "Sábado", "temp": 29},
+            {"dia": "Domingo", "temp": 33}
+        ],
+        [   # Semana 3
+            {"dia": "Lunes", "temp": 37},
+            {"dia": "Martes", "temp": 31},
+            {"dia": "Miércoles", "temp": 35},
+            {"dia": "Jueves", "temp": 32},
+            {"dia": "Viernes", "temp": 28},
+            {"dia": "Sábado", "temp": 31},
+            {"dia": "Domingo", "temp": 25}
+        ],
+        [   # Semana 4
+            {"dia": "Lunes", "temp": 25},
+            {"dia": "Martes", "temp": 28},
+            {"dia": "Miércoles", "temp": 30},
+            {"dia": "Jueves", "temp": 29},
+            {"dia": "Viernes", "temp": 34},
+            {"dia": "Sábado", "temp": 37},
+            {"dia": "Domingo", "temp": 31}
+        ]
+    ],
+    [   # Guayaquil
+        [   # Semana 1
+            {"dia": "Lunes", "temp": 22},
+            {"dia": "Martes", "temp": 24},
+            {"dia": "Miércoles", "temp": 28},
+            {"dia": "Jueves", "temp": 20},
+            {"dia": "Viernes", "temp": 23},
+            {"dia": "Sábado", "temp": 25},
+            {"dia": "Domingo", "temp": 29}
+        ],
+        [   # Semana 2
+            {"dia": "Lunes", "temp": 23},
+            {"dia": "Martes", "temp": 36},
+            {"dia": "Miércoles", "temp": 30},
+            {"dia": "Jueves", "temp": 32},
+            {"dia": "Viernes", "temp": 35},
+            {"dia": "Sábado", "temp": 27},
+            {"dia": "Domingo", "temp": 21}
+        ],
+        [   # Semana 3
+            {"dia": "Lunes", "temp": 21},
+            {"dia": "Martes", "temp": 25},
+            {"dia": "Miércoles", "temp": 28},
+            {"dia": "Jueves", "temp": 30},
+            {"dia": "Viernes", "temp": 32},
+            {"dia": "Sábado", "temp": 36},
+            {"dia": "Domingo", "temp": 20}
+        ],
+        [   # Semana 4
+            {"dia": "Lunes", "temp": 14},
+            {"dia": "Martes", "temp": 17},
+            {"dia": "Miércoles", "temp": 19},
+            {"dia": "Jueves", "temp": 21},
+            {"dia": "Viernes", "temp": 14},
+            {"dia": "Sábado", "temp": 17},
+            {"dia": "Domingo", "temp": 20}
+        ]
+    ],
+    [   # Cuenca
+        [   # Semana 1
+            {"dia": "Lunes", "temp": 20},
+            {"dia": "Martes", "temp": 22},
+            {"dia": "Miércoles", "temp": 34},
+            {"dia": "Jueves", "temp": 31},
+            {"dia": "Viernes", "temp":38},
+            {"dia": "Sábado", "temp": 28},
+            {"dia": "Domingo", "temp": 22}
+        ],
+        [   # Semana 2
+            {"dia": "Lunes", "temp": 39},
+            {"dia": "Martes", "temp": 21},
+            {"dia": "Miércoles", "temp": 23},
+            {"dia": "Jueves", "temp": 20},
+            {"dia": "Viernes", "temp": 27},
+            {"dia": "Sábado", "temp": 24},
+            {"dia": "Domingo", "temp": 11}
+        ],
+        [   # Semana 3
+            {"dia": "Lunes", "temp": 21},
+            {"dia": "Martes", "temp": 23},
+            {"dia": "Miércoles", "temp": 25},
+            {"dia": "Jueves", "temp": 22},
+            {"dia": "Viernes", "temp": 29},
+            {"dia": "Sábado", "temp": 36},
+            {"dia": "Domingo", "temp": 33}
+        ],
+        [   # Semana 4
+            {"dia": "Lunes", "temp": 18},
+            {"dia": "Martes", "temp": 19},
+            {"dia": "Miércoles", "temp": 25},
+            {"dia": "Jueves", "temp": 28},
+            {"dia": "Viernes", "temp": 26},
+            {"dia": "Sábado", "temp": 33},
+            {"dia": "Domingo", "temp": 20}
+        ]
+    ]
+]
+
+# Calcular el promedio de temperaturas para cada ciudad y semana
+for ciudad in temperaturas:
+    for semana in ciudad:
+        suma = 0
+        for dia in semana:
+            suma += dia['temp']
+        print(f"temperatura promedio")
+        print (suma)
