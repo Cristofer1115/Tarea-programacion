@@ -1,0 +1,18 @@
+# Crearemos un diccionario con informacion personal
+Informacion_personal = ["Nombre", "Apellido", "Edad", "Ciudad" , "Profesion"]
+print(Informacion_personal)
+Primernombre = Informacion_personal [0]
+Segapellido = Informacion_personal [1]
+Teredad = Informacion_personal [2]
+Cuarciudad = Informacion_personal [3]
+Quinprofesion= Informacion_personal [4]
+print(Primernombre)
+print("Cristofer")
+print(Segapellido)
+print("Salazar")
+print(Teredad)
+print("22 años")
+print(Cuarciudad)
+print("Quito")
+print(Quinprofesion)
+print("Conductor profesional")
